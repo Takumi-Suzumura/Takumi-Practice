@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>にゃんこ　せんりゅう　じぇねれーたー</title>
+
+        <link rel="stylesheet" href="app1.css">
+    </head>
+    <body>
+        <header>
+            <div class="head-wrapper">
+                <div class="container">
+                    <div class="header-logo">
+                        <h3>にゃー の せんりゅう じぇねれーたー</h3>
+                    </div>   
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="contents">
+                <div class="contents-logo">
+                    <h1>にゃー は せんりゅう を おべんきょー したんだにゃ！</h1>
+                </div>
+                <div class="nya-img">
+                    <img src="nyanko.png">
+                </div>
+                <div class="main">
+                    <p>みてみるにゃ？↓</p>
+                    <br>
+                    <p id="kami">ここに</p>
+                    <p id="naka">せんりゅーが</p>
+                    <p id="shimo">でてくるにゃ！</p>
+                    <input type="button" id="btn" value="ポチッとにゃ(｀・ω・´)！" onclick="senryu()">
+                    <script>
+                        function senryu(){
+                            var kami = ["んにゃにゃにゃにゃ", "んにゃごにゃご", "んごごごご", "にゃごにゃごにゃー","んにゃごごご", "がるるるる"];
+                            var naka = ["んにゃにゃごにゃーご", "にゃんにゃこにゃーにゃー", "んにゃごんごごご", "にゃごにゃごごろろ", "ごごごんごごご", "がるるるるるる"];
+                            var shimo = ["んにゃーにゃー", "ねこにゃーにゃー", "ごごごごご", "ごろにゃーご", "ぐるるるる", "がるるるる"];
+
+                            var a;
+                            a = Math.floor(Math.random() * kami.length);
+
+                            var b;
+                            b = Math.floor(Math.random() * naka.length);
+
+                            var c;
+                            c = Math.floor(Math.random() * shimo.length);
+
+                            document.getElementById("kami").textContent = kami[a];
+                            document.getElementById("naka").textContent = naka[b];
+                            document.getElementById("shimo").textContent = shimo[c];
+                        }
+                        
+                    </script>
+                    <p>どうだったかにゃ？もっともっとがんばっておベンキョするにゃ！</p>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
