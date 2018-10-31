@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Fizz Buzz　大戦</title>
+
+        <link rel="stylesheet" href="app2.css">
+
+    </head>
+
+
+    <body>
+        <header>
+            <div class="head-wrapper">
+                <div class="container">
+                    <div class="header-logo">
+                        <h3>にゃー　と　FizzBuzz げーむ　で　あそぶ　にゃ！</h3>
+                    </div>   
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="contents">
+                <div class="contents-logo">
+                    <h1>FizzBuzzたいせんっ！</h1>
+                </div>
+                
+                <div class="rule">
+                    <h4>るーる　せつめい</h4>
+                    <p>まず 「げーむすたーと」の ぼたん を おしますん</p>
+                    <p>でてきた すうじ が 「3 で わりきれる」 なら→「Fizzだにゃ！」</p>
+                    <p>「５ で わりきれる」 なら→「Buzzなんですにゃ」</p>
+                    <p>「3 でも ５ でも わりきれる」 なら→「FizzBuzzにゃおーん(｀・ω・´)」</p>
+                    <p>それ いがい→「どっちでもないすうじ」 の ぼたん を おすんだにゃ！</p>
+                    <p>100 まで かぞえられたら かち！ とちゅう で まちがえたら にゃー の かち だにゃ。</p>
+              </div>
+
+              <div class="nya-img">
+                   <img src="nya-.png">
+              </div>   
+              
+              <div class="game">
+                  <input type="button" id="start" value="げーむすたーと" class="start" onclick="number_write()">
+                  <p>このすうじは？</p>
+                  <p id ="number">ここに　すうじ　が　でてきます。るーる を みて ボタン を おしてね</p>
+                  <input type="button" id="btn_f" value="Fizzだにゃ！" class="btn_f" onclick="fizz()">
+                  <input type="button" id="btn_b" value="Buzzなんですにゃ" class="btn_b" onclick="buzz()">
+                  <input type="button" id="btn_fb" value="FizzBuzzにゃおーん(｀・ω・´)" class="btn_fb" onclick="fizzbuzz()">
+                  <input type="button" id="btn_num" value="どっちでもないすうじ" class="num" onclick="number()">
+                  <p></p>
+              </div>
+
+              <div class="fotter">
+                  <p>中の人のかいせつ</p>
+                  <p>FizzBuzzに当たる「3でも5でも割り切れる数字」ですが、言い換えると「3と5の公倍数」になります。</p>
+                  <p>つまり「３×５」の積（掛け算の答えのこと）である「15」の倍数とも解釈できます。</p>
+                  <p>「倍数」「公倍数」などは、学校で習います。今は頭のすみっこに追いやっても結構です。</p>
+                  <p>素早く計算が出来ることは日常生活において役立ちます（お金の計算とかお金の計算とかお金の計算とか）</p>
+                  <p>FizzBuzzゲームで素早く計算ができるように頑張ってみましょう!</p>
+              </div>
+                        
+               
+            </div>
+        </div>
+
+    <script src="webapp2.js"></script>
+    </body>
+</html>
